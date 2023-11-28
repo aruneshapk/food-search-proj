@@ -1,0 +1,59 @@
+.recepie{
+    /* whatecer here is not affected by other css files */
+    /* border-radius: 10PX; */
+    /* box-shadow: 0PX 5PX 20PX rgb(71,71,71); */
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+  z-index: 1;  
+  flex-wrap: wrap;
+  margin: 40px 40px;
+    min-width:40%;
+    position: relative;
+  width: 45vh;
+  height: 50vw;
+  background: rgba(255, 255, 255, 0.05);
+ padding:15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);  
+  opacity: 0.8; 
+  padding: 10px;
+}
+.image :hover { 
+  transform: scale(1.2,1.2);  
+  transition:0.3s; 
+}
+.image{
+    border-radius:50%;
+    overflow: hidden;
+    height: 30vh;
+    width: 30vh;
+ 
+}
+.recepie:hover { 
+  transform: scale(1.2,1.2);  
+  transition:0.3s; 
+  opacity: 1;
+}
+li{
+    list-style: none;
+    margin: 0 10px;
+    font-size: 0.8em; 
+    opacity:0.5;
+    color: rgb(247, 252, 255);
+  }
+  @media only screen and (max-width: 600px) {
+    li{
+      font-size: 0.5 rem;
+    }
+    .recepie{
+      flex-direction: row;
+      height: 100vh;
+    }
+    .image :hover { 
+      transform: scale(1.1,1.1);  
+      transition:0.3s; 
+    }
+  }
